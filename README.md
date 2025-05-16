@@ -1,0 +1,1 @@
+O projeto é uma PokeWiki, uma plataforma dedicada à organização e disponibilização de informações sobre Pokémon, visando maior acessibilidade aos dados. A proposta inclui uma apresentação detalhada de cada Pokémon, contemplando características gerais, atributos, habilidades, tipos elementares e, além disso, suas possíveis evoluções.
