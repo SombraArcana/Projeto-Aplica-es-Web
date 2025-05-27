@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh; /* <-- Este é um dos principais culpados */
+    background: url('imagens/Background-PaginaPrincipal.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* <-- Este também contribui muito */
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(0, 70, 135);
+    text-align: center;
+}
+
+/* Estilos para o Header Principal */
+.main-header {
+    width: 100%; /* Ocupa toda a largura */
+    background-color: rgba(0, 58, 112, 0.9); /* Azul escuro com transparência */
+    padding: 20px 0; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Sombra para profundidade */
+    position: sticky; /* Fixa o header no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    display: flex; /* Para centralizar o conteúdo do header */
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 1200px; /* Largura máxima para o conteúdo do header */
+    width: 90%;
+    display: flex;
+    flex-direction: column; /* Para empilhar logo/título se houver mais de um */
+    align-items: center;
+    justify-content: center;
+}
+
+.site-title {
+    font-size: 3.5rem; /* Um pouco maior para o título do header */
+    color: #fff; /* Cor do título em branco */
+    margin-bottom: 0; /* Remove a margem inferior padrão */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Sombra mais forte */
+    padding: 0; /* Remover padding do h1 se ele já estiver dentro do header com padding */
+    background-color: transparent; /* Remover o background-color do h1 aqui */
+    border-radius: 0; /* Remover border-radius do h1 aqui */
+}
+
+/* Se você adicionar um logo, estilize-o */
+/* .site-logo {
+    height: 80px; 
+    margin-bottom: 10px;
+} */
+
+/* Estilos para o Main Content (onde o catálogo e o botão de acesso ficam) */
+.main-content {
+    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente na área disponível */
+    align-items: center;
+    padding: 20px; /* Espaçamento interno */
+    width: 100%;
+}
+
+/* Mantendo os estilos do botão de navegação, mas agora com a classe .main-nav */
+.main-nav a {
+    text-decoration: none;
+    font-size: 1.8rem; /* Um pouco maior para destaque */
+    color: #fff;
+    background-color: #004A8F; /* Um tom de azul diferente, mais escuro */
+    padding: 18px 35px; /* Mais padding */
+    border-radius: 10px; /* Borda mais arredondada */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição de escala */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4); /* Sombra mais proeminente */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+.main-nav a:hover {
+    background-color: #003060; /* Cor mais escura no hover */
+    transform: translateY(-3px); /* Efeito de "subir" no hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* Sombra mais intensa no hover */
+}
+
+/* Mensagens de feedback (se você usar as classes sugeridas no PHP) */
+.welcome-message, .error-message {
+    font-size: 1.5rem;
+    color: #fff; /* Branca para contraste com o fundo */
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Opcional: Para o background no body, você pode remover o <style> do HTML
+   e deixar só aqui no CSS se preferir uma única fonte de verdade para o background. */
+body {
+    background: url('imagens/Background-PaginaPrincipal.png') no-repeat center center fixed;
+    background-size: cover;
+}
